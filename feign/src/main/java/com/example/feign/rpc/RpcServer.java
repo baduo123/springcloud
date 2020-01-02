@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author jim clark
  * @version 1.0
  */
-@FeignClient(value = "ribbon-provider" , fallbackFactory = RpcFallbackFactory.class)
+@FeignClient(value = "ribbon-provider")
 @Component
 public interface RpcServer {
     @RequestMapping("ribbon/get")

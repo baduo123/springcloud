@@ -12,8 +12,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/ribbon")
 public class RibbonController {
 
+    private final RibbonServer ribbonServer;
+
+    public RibbonController(RibbonServer ribbonServer) {
+        this.ribbonServer = ribbonServer;
+    }
+
     @GetMapping("get")
     public String get(){
-        return "hello ribbon2";
+        return "rebbion2222222222";
     }
 }
